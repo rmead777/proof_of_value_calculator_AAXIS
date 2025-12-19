@@ -397,7 +397,8 @@ async function start() {
   if (isProd) {
     const distDir = path.join(rootDir, 'dist');
     app.use(express.static(distDir));
-    app.get('*', (_req, res) => {
+    // Catch-all route for SPA - serve index.html for any unmatched routes
+    app.get('/{*path}', (_req, res) => {
       res.sendFile(path.join(distDir, 'index.html'));
     });
   } else {
