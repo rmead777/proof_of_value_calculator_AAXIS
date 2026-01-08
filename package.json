@@ -20,7 +20,7 @@
     "express": "^5.1.0",
     "lucide-react": "^0.561.0",
     "marked": "^15.0.8",
-    "nodemailer": "^6.9.16",
+    "nodemailer": "^7.0.11",
     "playwright": "^1.50.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
